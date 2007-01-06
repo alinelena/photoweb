@@ -1,0 +1,69 @@
+1. General
+
+This is a simple bash script to generate a stylish  WebGallery.
+http://titus.phy.qub.ac.uk/group/Alin/photogallery.html
+The result is XHTML 1.1 Strict and CSS standard.
+
+Author: (c) Alin M Elena, 2nd-3rd of January 2007, 
+alin.elena@yahoo.co.uk
+
+2. Installation
+
+No special installation is required. The simplest thing is to create a 
+folder
+a. gunzip -c webgallery.tar.gz | tar xvf -
+that suppose to generate a folder WebGallery
+b. mkdir test
+c. cp -r <path-to-WebGallery>/WebGallery/* test/
+d. ls test/*
+should show something like that
+
+test/WebGallery.sh   --> the script
+test/README   --> this README file
+test/test.html  --> just a simple test file
+
+test/css:
+style.css    ---> CSS file of the gallery
+
+test/gifs:  --> graphical elements used to generate the galley
+back.gif  
+back_grey.gif  
+next.gif  
+next_grey.gif
+
+3. Generating the Gallery
+move into the test folder created at 2.
+a. cd test
+create a new folder in wich you put the pictures that you want in 
+Gallery (eg images)
+Obs. They will appear in the same order that ls will list them.
+b. mkdir images
+copy the photos in the newly created folder.
+be sure that you get the desired order
+c. ls images/*
+create the description file (eg info.txt)
+d. touch info.txt
+to see what the file info.txt should contain run the script and read the 
+instructions.
+e. sh WebGallery.sh
+once everything in place you can generate the gallery
+f. sh WebGallery.sh "My first Gallery" images info.txt
+a number of targetxx.html files appeared plus index.html
+
+4. Final touch
+Open the file test.html in a browser and check that you got the right 
+gallery.
+Now we can remove the files that are redundant.
+rm WebGallery.sh
+rm README
+rm test.html
+rm info.txt   (a better practice will be to save this file for the case 
+you want to regenerate the gallery at a later date)
+Now the folder test will contain the WebGallery files necessary to add 
+to a website. 
+Enjoy!!
+
+5. The end
+This is a free package as defined by the GPL
+http://www.gnu.org/licenses/gpl.txt
+Please feel free to use and improve.
