@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary A very simple description of photoweb project
 #labels Phase-Deploy
 
 = Introduction =
@@ -14,14 +14,15 @@ alinm.elena@gmail.com
 == Installation ==
 No special installation is required. The simplest thing is to create a 
 folder
-a. {{{gunzip -c webgallery.tar.gz | tar xvf -}}}
-that suppose to generate a folder WebGallery}}}
-b. {{{mkdir test}}}
-c. {{{cp -r <path-to-WebGallery>/WebGallery/* test/}}}
-d. {{{ls test/*}}}
+a. {{{ gunzip -c webgallery.tar.gz | tar xvf - }}}
+that suppose to generate a folder WebGallery 
+b. {{{ mkdir test }}}
+c. {{{ cp -r <path-to-WebGallery>/WebGallery/* test/ }}}
+d. {{{ ls test/* }}}
 should show something like that
 
-{{{test/WebGallery.sh   --> the script
+{{{
+test/WebGallery.sh   --> the script
 test/README   --> this README file
 test/test.html  --> just a simple test file
 
@@ -32,32 +33,34 @@ test/gifs:  --> graphical elements used to generate the galley
 back.gif  
 back_grey.gif  
 next.gif  
-next_grey.gif}}}
+next_grey.gif
+}}}
 
 == Generating the Gallery ==
 move into the test folder created at 2.
-a. {{{cd test}}}
+a. {{{ cd test }}}
 create a new folder in wich you put the pictures that you want in 
 Gallery (eg images)
 Obs. They will appear in the same order that ls will list them.
-b. {{{mkdir images}}}
+b. {{{ mkdir images }}}
 copy the photos in the newly created folder.
 be sure that you get the desired order
-c. {{{ls images/*}}}
+c. {{{ ls images/* }}}
 create the description file (eg info.txt)
-d. {{{touch info.txt}}}
+d. {{{ touch info.txt }}}
 to see what the file info.txt should contain run the script and read the 
 instructions.
-e. {{{sh WebGallery.sh}}}
+e. {{{ sh WebGallery.sh }}}
 once everything in place you can generate the gallery
-f. {{{sh WebGallery.sh "My first Gallery" images info.txt}}}
+f. {{{ sh WebGallery.sh "My first Gallery" images info.txt }}}
 a number of targetxx.html files appeared plus index.html
 
 == Final touch ==
 Open the file test.html in a browser and check that you got the right 
 gallery.
 Now we can remove the files that are redundant.
-{{{rm WebGallery.sh
+{{{ 
+rm WebGallery.sh
 rm README
 rm test.html
 rm info.txt }}}  (a better practice will be to save this file for the case 
@@ -68,9 +71,11 @@ Enjoy!!
 
 == Linking to the gallery==
 You can use something like
-{{{<a href="index.html" onclick="window.open('index.html', '1155036654', '
+{{{
+<a href="index.html" onclick="window.open('index.html', '1155036654', '
 toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=610,he
-ight=540,left=280,top=100'); return false;\">Title of the Gallery</a>}}}
+ight=540,left=280,top=100'); return false;\">Title of the Gallery</a>
+}}}
 
 
 == The end ==
