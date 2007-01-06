@@ -1,0 +1,135 @@
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+        text-decoration: none;
+	background: black;
+}
+
+a{
+        text-decoration: none;
+	color:white;
+}
+
+.table2 {
+  margin: auto; 
+  padding: 0; 
+  text-align: center; 
+  width: 600px;
+  float:center;		
+}
+
+.table-row2 {
+  margin: 0; 
+   padding: 0; 
+text-align: center; 
+width: 100%;
+	float: auto;
+}
+
+.containerhf {
+border: none; 
+text-align:left;
+margin: 0; 
+padding: 0; 
+width: auto;
+background:#d7ebff; 
+color: #072ed7;
+}
+
+
+.containerall {
+border: 0; float: auto; margin: 0; padding: 0; width: auto;
+}
+
+.containerpict {
+border: 0; float: center; margin: 0; padding: 0; width: auto;
+}
+
+.txt{
+font-family:Verdana, Arial, Helvetica, sans-serif; 
+font-size:13px; 
+padding-top:2px; 
+padding-bottom:3px;
+text-align:center;
+}
+
+.PicsTxt{
+color:#333333;
+font-family:Verdana, Arial, Helvetica, sans-serif; 
+font-size:11px;
+font-weight: bold;
+text-align:left;
+}
+
+.GalName{
+color:#072ed7;
+font-family:Verdana, Arial, Helvetica, sans-serif; 
+font-size:15px;
+}
+
+.GalPict{
+height: 400px;
+float:center;
+border:1;
+}
+.noLink{
+color:#ada9a7;
+font-family:Verdana, Arial, Helvetica, sans-serif; 
+font-size:13px;
+font-weight:bold;
+}
+
+.containermedium{
+  border: none; margin: 0; padding: 0; width: 60%;
+float: left;
+text-align:center;	
+background:#d7ebff; 
+color: #072ed7;
+
+}
+.container15 {
+  border: none; float: right; margin: 0; padding: 0; width: 20%;
+text-align:right;
+background:#d7ebff; 
+color: #072ed7;
+
+}
+
+.container11 {
+  border: none; float: left; margin: 0; padding: 0; width: 20%;
+text-align:left;
+background:#d7ebff; 
+color: #072ed7;
+
+}
+
+.txtLinks a{
+font-family:Verdana, Arial, Helvetica, sans-serif; 
+font-size:13px;
+font-weight:bold;
+color: #072ed7;
+}
+
+.txtLinks a:hover{
+text-decoration: none;
+background:#d7ebff;
+}
+
+.selectedbox {
+background:#072ad7;
+width : 20px;
+text-align:center;
+float:auto;
+font-size:13px;
+}
+
+.unselectedbox {
+background:#006699;
+width : 20px;
+text-align:center;
+float:auto;
+font-size:13px;
+}
